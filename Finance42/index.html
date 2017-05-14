@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Finance42</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/starter-template.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Finance42</a>
+      </div>
+
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h2>Finance42</h2>
+      <p class="lead">Type in your variables to compute your investment or loan</p>
+      <br>
+
+      <!-- Calculator Input -->
+
+      <form id="myForm">
+        <div class="form-group row">
+          <label for="example-text-input" class="col-2 col-form-label">Number of Periods</label>
+          <div class="col-10">
+            <input class="form-control" type="number" placeholder="n" id="nPeriods">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="example-text-input" class="col-2 col-form-label">Interest or Discount Rate</label>
+          <div class="col-10">
+            <input class="form-control" type="number" placeholder="i%" id="interestRate">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="example-text-input" class="col-2 col-form-label">Present Value</label>
+          <div class="col-10">
+            <input class="form-control" type="number" placeholder="PV" id="presentValue">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="example-text-input" class="col-2 col-form-label">Annuity</label>
+          <div class="col-10">
+            <input class="form-control" type="number" placeholder="PMT" id="annuity">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="example-text-input" class="col-2 col-form-label">Future Value</label>
+          <div class="col-10">
+            <input class="form-control" type="number" placeholder="FV" id="futureValue">
+          </div>
+        </div>
+        <br>
+        <!-- /Calculator Input -->
+        <input type="submit" class="btn btn-primary" value="Compute">
+      </form>
+    </div>
+
+
+
+    <div id="results">
+
+
+    </div>
+
+
+    <footer class="footer">
+      <p>&copy; 2016 Company, Inc.</p>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="js/myScript.js"></script>
+
+</html>
